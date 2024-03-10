@@ -1,9 +1,13 @@
 <div class="container d-flex align-items-center">
-   <div class="container-fluid d-flex align-items-center gap-3">
-      <a class="navbar-brand" href="#">
-         <img src="images/sidoarjo.png" alt="" width="35" height="35" class="d-inline-block align-text-top">
-         <!-- <h3 class="logo me-auto text-uppercase fs-5 text-white"><a href="index.html">diskominfo</a></h3> -->
+   <div class="container d-flex align-items-center gap-3">
+      <a class="navbar-brand" href="index.php">
+         <img src="images/sidoarjo.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
       </a>
+      <small class="text-black text-uppercase fw-semibold lh-sm">
+         DINAS KOMUNIKASI DAN INFORMATIKA
+         <br>
+         KABUPATEN SIDOARJO
+      </small>
    </div>
 
    <nav id="navbar" class="navbar order-last order-lg-0 text-capitalize">
@@ -46,6 +50,6 @@
             }
 			?>
       </ul>
-      <i class="bi bi-list mobile-nav-toggle text-white"></i>
+      <i class="bi bi-list mobile-nav-toggle"></i>
    </nav><!-- .navbar -->
 </div>

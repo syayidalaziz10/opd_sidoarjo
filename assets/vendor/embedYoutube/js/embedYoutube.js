@@ -51,14 +51,11 @@ function onYouTubeIframeAPIReady() {
 
 (function ($) {
   $(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
+    $('.media-carousel').owlCarousel({
       loop: false,
       margin: 10,
       nav: false,
-      navText: [
-        "<i class='fas fa-chevron-left'></i>",
-        "<i class='fas fa-chevron-right'></i>",
-      ],
+      dots: true,
       autoplay: false,
       autoplayHoverPause: true,
       responsive: {

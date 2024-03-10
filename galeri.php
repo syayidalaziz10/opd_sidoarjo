@@ -28,16 +28,12 @@
         <link href="assets/css/style.css" rel="stylesheet">
         <link href="assets/vendor/embedYoutube/css/embedYoutube.css"  rel="stylesheet" >
         
-        <!-- PLUGINS CSS FILES -->
-        <link href="assets/css/fullpage.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     </head>
     <body>
 
-        <header id="header" class="fixed-top d-flex align-items-center py-4 shadow">
+        <header id="header" class="fixed-top d-flex align-items-center py-3 px-5 shadow">
             <?php 
                 require('view/navbar.php')
             ?>
@@ -50,12 +46,12 @@
                     <div class="row">
                         <div class="col-12">
                             <a href="index.php" class="btn custom-btn smoothscroll me-3 mb-5">Kembali ke Beranda</a>
-                            <h1 class="text-white pb-2 text-center">Galeri</h1>
+                            <h1 class="text-center">Galeri</h1>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="site-details section-padding">
+            <section class="site-details">
                 <div class="container">
                     <div class="row g-4">
                         <div class="col-lg-4 col-12">

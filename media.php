@@ -37,7 +37,7 @@
     </head>
     <body>
 
-        <header id="header" class="fixed-top d-flex align-items-center py-4 shadow">
+        <header id="header" class="fixed-top d-flex align-items-center py-3 px-5 shadow">
             <?php 
                 require('view/navbar.php')
             ?>
@@ -50,41 +50,21 @@
                     <div class="row">
                         <div class="col-12">
                             <a href="index.php" class="btn custom-btn smoothscroll me-3 mb-5">Kembali ke Beranda</a>
-                            <h1 class="text-white pb-2 text-center">Media Digital</h1>
+                            <h1 class="text-center">Media Digital</h1>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="site-details section-padding">
+            <section class="site-details">
                 <div class="container">
                     <div class="row gy-4 justify-content-start">
+                        <!-- VIDEO ITEM START -->
                         <div class="col-lg-4 col-12">
-                            <iframe class="rounded-4" width="420" height="280" src="https://www.youtube.com/embed/fke3ophGjIk?si=0-LI81REtONQsfff" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <div>
+                                <button class="btn p-0 js-play" type="button" data-bs-toggle="modal" data-bs-target="#modalVideo" data-src="c7nRTF2SowQ" data-title="Официальный анонс-трейлер Battlefield 1"><img class="img-fluid rounded-3" src="https://img.youtube.com/vi/c7nRTF2SowQ/maxresdefault.jpg" alt="Официальный анонс-трейлер Battlefield 1"/></button>
+                            </div>
                         </div>
-                        <div class="col-lg-4 col-12">
-                            <iframe class="rounded-4" width="420" height="280" src="https://www.youtube.com/embed/fke3ophGjIk?si=0-LI81REtONQsfff" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="col-lg-4 col-12">
-                            <iframe class="rounded-4" width="420" height="280" src="https://www.youtube.com/embed/fke3ophGjIk?si=0-LI81REtONQsfff" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="col-lg-4 col-12">
-                            <iframe class="rounded-4" width="420" height="280" src="https://www.youtube.com/embed/fke3ophGjIk?si=0-LI81REtONQsfff" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="col-lg-4 col-12">
-                            <iframe class="rounded-4" width="420" height="280" src="https://www.youtube.com/embed/fke3ophGjIk?si=0-LI81REtONQsfff" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="col-lg-4 col-12">
-                            <iframe class="rounded-4" width="420" height="280" src="https://www.youtube.com/embed/fke3ophGjIk?si=0-LI81REtONQsfff" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="col-lg-4 col-12">
-                            <iframe class="rounded-4" width="420" height="280" src="https://www.youtube.com/embed/fke3ophGjIk?si=0-LI81REtONQsfff" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="col-lg-4 col-12">
-                            <iframe class="rounded-4" width="420" height="280" src="https://www.youtube.com/embed/fke3ophGjIk?si=0-LI81REtONQsfff" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="col-lg-4 col-12">
-                            <iframe class="rounded-4" width="420" height="280" src="https://www.youtube.com/embed/fke3ophGjIk?si=0-LI81REtONQsfff" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
+                        <!-- VIDEO ITEM END -->
                     </div>
                 </div>
             </section>
@@ -96,10 +76,70 @@
             ?>
         </footer>
 
+
+        
+        <div class="modal fade media-modal" tabindex="-1" role="dialog" aria-hidden="true" id="modalVideo">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body px-0 py-0">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <div class="embed-responsive-item rounded-4" id="youTubeIframe" style="width: 100%; height: 300px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/modernizr.js"></script>
         <script src="assets/js/custom.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+
+        <script>
+            var player;
+            var lastButton = '';
+            const youtube = 'youTubeIframe';
+            const titleInsert = '.js-title-insert';
+            const btnPlay = '.js-play';
+            const btnPause = '.js-pause';
+            const modalId = '#modalVideo';
+            const videoQuality = 'hd720';
+
+            function onYouTubePlayerAPIReady() {
+                player = new YT.Player(youtube, {
+                    controls: 2,
+                    iv_load_policy: 3,
+                    rel: 0,
+                    events: {
+                    onReady: onPlayerReady
+                    }
+                });
+            }
+
+            function onPlayerReady(event) {
+                'use strict';
+                $(btnPlay).on('click', function() {
+                    var videoId = $(this).attr('data-src');
+                    
+                    if (lastButton == videoId) {
+                        $(titleInsert).text($(this).attr('data-title'));
+                        player.playVideo(videoId, 0, videoQuality);
+                        } else {
+                        $(titleInsert).text($(this).attr('data-title'));
+                        player.loadVideoById(videoId, 0, videoQuality);
+                        lastButton = videoId;
+                    }
+                });
+            
+                $(btnPause).on('click', function() {
+                    player.pauseVideo();
+                });
+                
+                $(modalId).on('click', function() {
+                    player.pauseVideo();
+                });
+            }
+        </script>
 
     </body>
 </html>
