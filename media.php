@@ -79,11 +79,11 @@
 
         
         <div class="modal fade media-modal" tabindex="-1" role="dialog" aria-hidden="true" id="modalVideo">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-body px-0 py-0">
                         <div class="embed-responsive embed-responsive-16by9">
-                            <div class="embed-responsive-item rounded-4" id="youTubeIframe" style="width: 100%; height: 300px"></div>
+                            <div class="embed-responsive-item" id="youTubeIframe" style="width: 100%; height: 48vh"></div>
                         </div>
                     </div>
                 </div>
