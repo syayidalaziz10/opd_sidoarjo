@@ -3,7 +3,7 @@
       <a class="navbar-brand" href="index.php">
          <img src="images/sidoarjo.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
       </a>
-      <small class="text-black text-uppercase fw-semibold lh-sm">
+      <small class="text-black text-uppercase fw-semibold lh-sm navbar-title">
          DINAS KOMUNIKASI DAN INFORMATIKA
          <br>
          KABUPATEN SIDOARJO

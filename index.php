@@ -24,7 +24,7 @@
 
         <!-- CSS FILES -->                
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">>
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet">
         <link href="assets/vendor/embedYoutube/css/embedYoutube.css"  rel="stylesheet" >
         
@@ -78,7 +78,7 @@
 
         <header id="header" class="fixed-top d-flex align-items-center py-3 shadow">
             <?php 
-                require('view/navbar.php')
+                require ('view/navbar.php');
             ?>
         </header>
 
@@ -127,24 +127,32 @@
             </div>
             <!-- PIMPINAN END -->
 
-            <!-- LAYANAN START -->
-            <div class="section section-padding" id="layanan">
+            <!-- LAYANAN END -->
+            <div class="section" id="services">
                 <div class="container">
-                    <div class="row">
-                        <div class="d-flex align-items-center justify-content-between mb-5">
-                            <div>
-                                <h2>Layanan</h2>
-                            </div>
-                            <div class="d-flex align-items-center ms-lg-auto">
-                                <a href="berita.php" class="btn custom-btn">Selengkapnya</a>
+                    <div>
+                        <h2>Layanan Publik</h2>
+                    </div>
+                    <div class="col-12 mt-5 owl-carousel owl-theme" id="services-carousel">
+                        <!-- LAYANAN ITEM START -->
+                        <div class="card text-center border-0 rounded-4">
+                            <div class="card-body content">
+                                <div class="imgBx">
+                                    <img src="images/sidoarjo.png">
+                                </div>
+                                <div class="contentBx">
+                                    <h3 class="fw-bold">Card title</h3>
+                                </div>
+                                <div class="sci">
+                                    <small>Some quick example text to build on the card title and make up the bulk of the card'scontent.</small>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                        </div>
+                        <!-- LAYANAN ITEM END -->
                     </div>
                 </div>
             </div>
-            <!-- LAYANAN END -->
+            <!-- LAYANAN START -->
 
 
             <!-- MEDIA START -->
@@ -538,6 +546,29 @@
                 navigation: true,
                 // anchors:['beranda', 'pimpinan', 'layanan' ,'media', 'berita', 'kontak', 'footer']
             });
+
+            $('#services-carousel').owlCarousel({
+                margin:15,
+                autoplay:false,
+                loop:false,
+                nav:true,
+                dots:false,
+                navText : [
+                    '<i class="bi bi-arrow-left"></i>',
+                    '<i class="bi bi-arrow-right"></i>'
+                ],
+                responsive:{
+                    0:{
+                        items:2
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            })
 
             document.addEventListener('DOMContentLoaded', function() {
                 var calendarEl = document.getElementById('calendar');

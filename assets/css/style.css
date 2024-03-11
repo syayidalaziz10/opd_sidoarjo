@@ -439,6 +439,19 @@ strong {
   color: #000000;
 } */
 
+.navbar-title {
+  color: var(--secondary-color);
+  display: block;
+  font-size: 10px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
 .navbar a,
 .navbar a:focus {
   display: flex;
@@ -1302,15 +1315,69 @@ strong {
   color: var(--white-color);
 }
 
-#services .card .icon {
+#services .card {
+  position: relative;
+  min-height: 350px;
+  width: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#services .card .icon img {
+#services .card .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.container .card .content .contentBx h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 1rem 0;
+  line-height: 1.1em;
+}
+
+#services .card:hover .content {
+  transform: translateY(-60px);
+}
+
+#services .card .content .imgBx {
+  position: relative;
   width: 100px;
-  /* height: 40px; */
+  height: 100px;
+  overflow: hidden;
+}
+
+#services .card .content .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#services .card .sci {
+  position: absolute;
+  bottom: -10px;
+  display: flex;
+}
+
+#services .card .sci small {
+  transform: translateY(40px);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+#services .card:hover .sci small {
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 /*---------------------------------------
