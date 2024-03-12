@@ -1226,6 +1226,53 @@ strong {
   border-radius: 0.8rem;
 }
 
+/*==============================================
+07. Float Navigasi
+================================================*/
+/* SOCIAL PANEL CSS */
+.visitor-panel-container {
+  position: fixed;
+  bottom: 100px;
+  transform: translateX(-300px);
+  transition: transform 0.4s ease-in-out;
+  color: #000;
+  z-index: 999;
+}
+
+.visitor-panel-container.visible {
+  transform: translateX(10px);
+}
+
+.visitor-panel {
+  background-color: var(--white-color);
+  position: relative;
+  max-width: calc(100% - 10px);
+  width: 300px;
+  border: 2px solid var(--secondary-color);
+}
+
+.visitor-panel button.close-btn {
+  border: 0;
+  color: #97a5ce;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.visitor-panel button.close-btn:focus {
+  outline: none;
+}
+
+.visitor-panel small {
+  font-size: 10px;
+}
+
+.visitor-panel medium {
+  font-size: 16px;
+}
+
 .fixed-container {
   position: fixed;
   bottom: 2rem;
@@ -1278,7 +1325,7 @@ strong {
 #services .owl-carousel .owl-nav .owl-prev {
   position: absolute;
   top: -70px;
-  right: 60px;
+  right: 70px;
   transition: 0.5s;
   background: var(--secondary-color);
   border-radius: var(--border-radius-large);
@@ -1294,7 +1341,7 @@ strong {
 #services .owl-carousel .owl-nav .owl-next {
   position: absolute;
   top: -70px;
-  right: 0;
+  right: 20px;
   background: var(--secondary-color);
   border-radius: var(--border-radius-large);
   color: var(--white-color);
@@ -1318,7 +1365,6 @@ strong {
 #services .card {
   position: relative;
   min-height: 350px;
-  width: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1326,6 +1372,8 @@ strong {
 
 #services .card .content {
   position: relative;
+  width: 90%;
+  min-width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1333,9 +1381,9 @@ strong {
   transition: 0.5s;
 }
 
-.container .card .content .contentBx h3 {
+#services .card .content .contentBx h3 {
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 500;
   font-size: 18px;
   text-align: center;
@@ -1349,7 +1397,7 @@ strong {
 
 #services .card .content .imgBx {
   position: relative;
-  width: 100px;
+  width: 200px;
   height: 100px;
   overflow: hidden;
 }
@@ -1358,24 +1406,30 @@ strong {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 100px;
+  max-width: 200px;
+  width: 200px;
+  object-fit: contain;
 }
 
 #services .card .sci {
   position: absolute;
   bottom: -10px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-#services .card .sci small {
-  transform: translateY(40px);
+#services .card .sci small,
+#services .card .sci a {
+  transform: translateY(10px);
   transition: 0.5s;
   opacity: 0;
 }
 
-#services .card:hover .sci small {
+#services .card:hover .sci small,
+#services .card:hover .sci a {
   transform: translateY(0px);
   opacity: 1;
 }

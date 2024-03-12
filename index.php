@@ -37,8 +37,37 @@
     </head>
     <body>
 
+        <div class="visitor-panel-container">
+            <div class="visitor-panel rounded-pill p-2 d-flex justify-content-center align-items-center gap-4">
+                <div class="d-flex justify-content-center align-items-center flex-column ">
+                    <small>HARI INI</small>
+                    <medium class="fw-bolder">127381</medium>
+                </div>
+                <div class="d-flex justify-content-center align-items-center flex-column ">
+                    <small>BULAN INI</small>
+                    <medium class="fw-bolder">127381</medium>
+                </div>
+                <div class="d-flex justify-content-center align-items-center flex-column ">
+                    <small>TAHUN INI</small>
+                    <medium class="fw-bolder">127381</medium>
+                </div>
+            </div>
+        </div>
+
         <div class="d-flex justify-content-center align-items-center">
-            <div class="container fixed-container d-flex justify-content-between align-items-center">
+            <div class="container-fluid fixed-container d-flex justify-content-between align-items-center">        
+                <!-- VISITOR START -->
+                <div class="visitor rounded-pill">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-people-fill floating-btn"></a>
+                            </li>
+                        </ul>
+                        <small>Visitor : </small><medium class="fw-bolder">127381</medium>
+                    </div>
+                </div>
+                <!-- VISITOR END -->
                 <!-- SOCIAL MEDIA START -->
                 <div class="social-media rounded-pill">
                     <ul class="social-icon">
@@ -57,19 +86,6 @@
                     </ul>
                 </div>
                 <!-- SOCIAL MEDIA END -->
-        
-                <!-- VISITOR START -->
-                <div class="visitor rounded-pill">
-                    <div class="d-flex justify-content-center align-items-center gap-2">
-                        <ul class="social-icon">
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-people-fill"></a>
-                            </li>
-                        </ul>
-                        <small>Visitor : </small><medium class="fw-bolder">127381</medium>
-                    </div>
-                </div>
-                <!-- VISITOR END -->
             </div>
         </div>
 
@@ -117,7 +133,6 @@
                                     <medium class="text-white fst-italic">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde magni, ipsa eligendi vitae reiciendis maxime autem iure velit similique ut modi totam quasi, voluptatum sapiente odio commodi nemo vero cum."</medium>
                                     <div class="custom-border-btn-wrap d-flex align-items-center">
                                         <a href="about.html" class="custom-btn custom-border-btn btn mt-3">Cek Laporan LHKPN</a>
-                                        <!-- <a href="about.html" class="custom-btn custom-border-btn btn me-3">Lihat Pegawai Lainnya</a> -->
                                     </div>
                                 </div>
                             </div>
@@ -133,22 +148,128 @@
                     <div>
                         <h2>Layanan Publik</h2>
                     </div>
-                    <div class="col-12 mt-5 owl-carousel owl-theme" id="services-carousel">
-                        <!-- LAYANAN ITEM START -->
-                        <div class="card text-center border-0 rounded-4">
-                            <div class="card-body content">
-                                <div class="imgBx">
-                                    <img src="images/sidoarjo.png">
+                    <div class="row">
+                        <div class="col-12 mt-5 owl-carousel owl-theme" id="services-carousel">
+                            <!-- LAYANAN ITEM START -->
+                            <div class="card text-center border-0 rounded-4">
+                                <div class="card-body content">
+                                    <div class="imgBx">
+                                        <img src="images/sidoarjo.png">
+                                    </div>
+                                    <div class="contentBx">
+                                        <h3 class="fw-bold">Card title</h3>
+                                    </div>
+                                    <div class="sci">
+                                        <small>Some quick example text to build on the card title and make up the bulk of the card'scontent.</small>
+                                        <a href="media.php" class="btn custom-btn custom-border-btn">Lihat Layanan</a>
+                                    </div>
                                 </div>
-                                <div class="contentBx">
-                                    <h3 class="fw-bold">Card title</h3>
+                            </div>
+                            <!-- LAYANAN ITEM END -->
+                            <!-- LAYANAN ITEM START -->
+                            <div class="card text-center border-0 rounded-4">
+                                <div class="card-body content">
+                                    <div class="imgBx">
+                                        <img src="images/sidoarjo.png">
+                                    </div>
+                                    <div class="contentBx">
+                                        <h3 class="fw-bold">Card title</h3>
+                                    </div>
+                                    <div class="sci">
+                                        <small>Some quick example text to build on the card title and make up the bulk of the card'scontent.</small>
+                                        <a href="media.php" class="btn custom-btn custom-border-btn">Lihat Layanan</a>
+                                    </div>
                                 </div>
-                                <div class="sci">
-                                    <small>Some quick example text to build on the card title and make up the bulk of the card'scontent.</small>
+                            </div>
+                            <!-- LAYANAN ITEM END -->
+                            <!-- LAYANAN ITEM START -->
+                            <div class="card text-center border-0 rounded-4">
+                                <div class="card-body content">
+                                    <div class="imgBx">
+                                        <img src="images/sidoarjo.png">
+                                    </div>
+                                    <div class="contentBx">
+                                        <h3 class="fw-bold">Card title</h3>
+                                    </div>
+                                    <div class="sci">
+                                        <small>Some quick example text to build on the card title and make up the bulk of the card'scontent.</small>
+                                        <a href="media.php" class="btn custom-btn custom-border-btn">Lihat Layanan</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- LAYANAN ITEM END -->
+                            <!-- LAYANAN ITEM START -->
+                            <div class="card text-center border-0 rounded-4">
+                                <div class="card-body content">
+                                    <div class="imgBx">
+                                        <img src="images/sidoarjo.png">
+                                    </div>
+                                    <div class="contentBx">
+                                        <h3 class="fw-bold">Card title</h3>
+                                    </div>
+                                    <div class="sci">
+                                        <small>Some quick example text to build on the card title and make up the bulk of the card'scontent.</small>
+                                        <a href="media.php" class="btn custom-btn custom-border-btn">Lihat Layanan</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- LAYANAN ITEM END -->
+                            <!-- LAYANAN ITEM START -->
+                            <div class="card text-center border-0 rounded-4">
+                                <div class="card-body content">
+                                    <div class="imgBx">
+                                        <img src="images/sidoarjo.png" class="img-fluid">
+                                    </div>
+                                    <div class="contentBx">
+                                        <h3 class="fw-bold">Card title</h3>
+                                    </div>
+                                    <div class="sci">
+                                        <small>Some quick example text to build on the card title and make up the bulk of the card'scontent.</small>
+                                        <a href="media.php" class="btn custom-btn custom-border-btn">Lihat Layanan</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- LAYANAN ITEM END -->
+                            <!-- LAYANAN ITEM START -->
+                            <div class="card text-center border-0 rounded-4">
+                                <div class="card-body content">
+                                    <div class="imgBx">
+                                        <img src="images/sidoarjo.png">
+                                    </div>
+                                    <div class="contentBx">
+                                        <h3 class="fw-bold">Card title</h3>
+                                    </div>
+                                    <div class="sci">
+                                        <small>Some quick example text to build on the card title and make up the bulk of the card'scontent.</small>
+                                        <a href="media.php" class="btn custom-btn custom-border-btn">Lihat Layanan</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- LAYANAN ITEM END -->
+                            <!-- LAYANAN ITEM START -->
+                            <div class="card text-center border-0 rounded-4">
+                                <div class="card-body content">
+                                    <div class="imgBx">
+                                        <img src="images/test.png">
+                                    </div>
+                                    <div class="contentBx">
+                                        <h3 class="fw-bold">Card title</h3>
+                                    </div>
+                                    <div class="sci">
+                                        <small>Some quick example text to build on the card title and make up the bulk of the card'scontent.</small>
+                                        <a href="media.php" class="btn custom-btn custom-border-btn">Lihat Layanan</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- LAYANAN ITEM END -->
+                        </div>
+                        <div class="col-12 d-flex justify-content-center mt-5">
+                            <div>
+                                <div class="d-flex align-items-center ms-lg-auto">
+                                    <a href="media.php" class="btn custom-btn">Tampilkan Semua</a>
                                 </div>
                             </div>
                         </div>
-                        <!-- LAYANAN ITEM END -->
                     </div>
                 </div>
             </div>
@@ -622,6 +743,20 @@
 
             
             window.addEventListener("load", () => inputs[0].focus());
+
+
+            // COUNTER PENGUNJUNG
+            const floating_btn = document.querySelector('.floating-btn');
+            const close_btn = document.querySelector('.close-btn');
+            const social_panel_container = document.querySelector('.visitor-panel-container');
+
+            floating_btn.addEventListener('click', () => {
+                social_panel_container.classList.toggle('visible')
+            });
+
+            close_btn.addEventListener('click', () => {
+                social_panel_container.classList.remove('visible')
+            });	
 
         </script>
     </body>
