@@ -263,13 +263,6 @@
                             </div>
                             <!-- LAYANAN ITEM END -->
                         </div>
-                        <div class="col-12 d-flex justify-content-center mt-5">
-                            <div>
-                                <div class="d-flex align-items-center ms-lg-auto">
-                                    <a href="media.php" class="btn custom-btn">Tampilkan Semua</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
