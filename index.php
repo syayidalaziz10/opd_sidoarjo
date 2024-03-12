@@ -92,7 +92,7 @@
         
 
 
-        <header id="header" class="fixed-top d-flex align-items-center py-3 shadow">
+        <header id="header" class="fixed-top d-flex align-items-center py-3 px-5 shadow">
             <?php 
                 require ('view/navbar.php');
             ?>
