@@ -442,7 +442,7 @@ strong {
 .navbar-title {
   color: var(--secondary-color);
   display: block;
-  font-size: 10px;
+  font-size: 13px;
   line-height: normal;
   text-transform: uppercase;
 }
@@ -1535,4 +1535,25 @@ nav[aria-label="breadcrumb"] {
 .media-modal .modal-dialog .modal-header {
   background: none;
   border: 0;
+}
+
+.files-list {
+  /* border: 1px solid var(--p-color); */
+  background-color: var(--white-color);
+}
+
+.files-list:hover {
+  background-color: var(--primary-color);
+}
+
+.files-list:hover p {
+  color: var(--white-color);
+}
+
+.files-list p {
+  font-size: 15px;
+}
+
+.files-list .events-title {
+  font-size: 1.4rem;
 }

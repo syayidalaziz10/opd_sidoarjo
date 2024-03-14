@@ -132,7 +132,7 @@
                                     <h2 class="text-capitalize text-white my-3">Dra. Noer Rochmawati, M.Si., Ak</h2>
                                     <medium class="text-white fst-italic">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde magni, ipsa eligendi vitae reiciendis maxime autem iure velit similique ut modi totam quasi, voluptatum sapiente odio commodi nemo vero cum."</medium>
                                     <div class="custom-border-btn-wrap d-flex align-items-center">
-                                        <a href="about.html" class="custom-btn custom-border-btn btn mt-3">Cek Laporan LHKPN</a>
+                                        <a href="about.html" class="custom-btn custom-border-btn btn mt-3">LHKPN</a>
                                     </div>
                                 </div>
                             </div>
@@ -539,7 +539,7 @@
                     <div class="row">
                         <div class="col-lg-5 col-12">
                             <form action="#" method="post" class="custom-form contact-form" role="form">
-                                <h2 class="mb-4 pb-2">Hubungi Kami</h2>
+                                <h2 class="mb-4 pb-2">Kritik dan Saran</h2>
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-12">
                                         <div class="form-floating">
