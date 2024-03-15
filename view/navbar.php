@@ -1,4 +1,4 @@
-<div class="container-fluid d-flex align-items-center px-5">
+<div class="container-fluid d-flex align-items-center px-lg-5">
    <div class="container-fluid d-flex align-items-center gap-3">
       <a class="navbar-brand" href="index.php">
          <img src="images/sidoarjo.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
